@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World, ReactJS</title>
+    <!-- Pacotes para trabalhar com react -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <h1> Hello Word </h1>
+    <div id="root"></div>
+    
+
+    <script>
+       
+       //Sem o React
+        //let h1 = document.createElement("h1");
+        //h1.innerHTML = "Hello World, ReactJS";
+        //document.querySelector("#root").appendChild(h1);
+
+       // Cria o elemento com react
+        let h1 = React.createElement("h1", null, "Hello Word React");
+        //Renderiza 
+        ReactDOM.render(h1, document.querySelector("#root"));
+    
+    </script>
+</body>
+</html>
