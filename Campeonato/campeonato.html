@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Campeonato</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script>
+        let times = [{
+            nome: "São Paulo",
+            vitorias: 0,
+            empates: 2,
+            derrotas:27,
+            golsproprio:5,
+            golscontra:7
+        }, {
+            nome: "Corinthians",
+            vitorias: 52,
+            empates: 2,
+            derrotas:6,
+            golsproprio:125,
+            golscontra:2
+        }, {
+            nome: "Palmeiras",
+            vitorias: 6,
+            empates: 2,
+            derrotas:8,
+            golsproprio:20,
+            golscontra:32
+        }, {
+            nome: "Santos",
+            vitorias: 10,
+            empates: 1,
+            derrotas:9,
+            golsproprio:10,
+            golscontra:25
+        }, {
+            nome: "Coritiba",
+            vitorias: 5,
+            empates: 4,
+            derrotas:56,
+            golsproprio:2,
+            golscontra:40
+        }, {
+            nome: "Flamengo",
+            vitorias: 0,
+            empates: 0,
+            derrotas:75,
+            golsproprio:0,
+            golscontra:33
+        }];
+
+       
+        console.log('1')
+        let vitoriaa = times.filter(times => {
+            return times.vitorias >= 20
+        });
+        console.log(vitoriaa);
+
+
+      
+        console.log('2')
+        let nom = times.map(times => times.nome);
+        console.log(nom);
+
+
+       
+        console.log('3')
+        
+        let add = times.unshift(times => {return{
+
+            nome: "Wolves",
+            vitorias: 12,
+            empates: 8,
+            derrotas:10,
+            golsproprio:38,
+            golscontra:36
+         }
+          });
+        console.log(add);
+
+
+
+        
+          console.log('4')
+          let result = times.filter(times => {
+            return {
+                nome : time.nome,
+                quantidadeJogos : time.vitorias + time.derrotas + time.empates,
+                vitorias : time.vitorias,
+                derrotas : time.derrotas,
+                empates : time.empates,
+                total : (time.golsproprio - time.golscontra)
+            }
+        });
+        console.log(result);
+
+
+        
+         let totalCampeonato = dadosTimes.filter((jogos, time) =>{
+
+        return jogos + time.quantidadeJogos;
+       }, 0)
+        console.log(totalCampeonato);   
+       
+
+    </script>
+
+
+
+</html>

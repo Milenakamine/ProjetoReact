@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <body>
+        <!-- placeholder da uma noção para o consumidor -->
+        <input type="text" id="nome" placeholder="Nome completo." required/>
+        <input type="text" id="email" placeholder="E-mail válido." required/>
+        <input type="text" id="telefone" placeholder="(00)00000-0000" required/>
+        <button type="submit" id="btnCadastrar">Cadastrar</button>
+        <button type="button" id='btnRemover'>Remover</button>
+    
+        <table>
+            <caption>Contatos</caption>
+            <thead>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Senha</th>
+            </thead>
+            <tbody id="tabela-lista-corpo"></tbody>
+        </table>   
+    
+        <script>
+            let contatos = [{ 
+                                nome : 'Akamine',
+                                email : 'akamine@gmail.com',
+                                telefone : '11975757575'
+                            }]
+        </script>
+    </body>
+</html>

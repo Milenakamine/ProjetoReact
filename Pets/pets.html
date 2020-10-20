@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+
+    <title>Exercícios</title>
+
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+
+</body>
+
+<script>
+
+	let pets = [{
+            nome: "Pipoca",
+            idade: 2,
+            tipoPet: "cachorro"
+        }, {
+            nome: "Lola",
+            idade: 4,
+            tipoPet: "cachorro"
+        }, {
+            nome: "Harry",
+            idade: 7,
+            tipoPet: "cachorro"
+        }, {
+            nome: "Ravenna",
+            idade: 6,
+            tipoPet: "gato"
+        }, {
+            nome: "Lis",
+            idade: 2,
+            tipoPet: "gato"
+        }, {
+            nome: "Pipi",
+            idade: 6,
+            tipoPet: "pássaro"
+        }, {
+            nome: "Linda",
+            idade: 1,
+            tipoPet: "cachorro"
+        }];
+
+       
+        console.log('1');
+        let gato = pets.filter(pet => { return pet.tipoPet === 'gato'; })
+        console.log(gato);
+
+        
+
+        console.log('2');
+        let petsM7 = pets.filter(pet => { return pet.idade > 7 && pet.tipoPet === 'gato'; })
+        console.log(petsM7);
+
+
+
+   
+        console.log(' 3');
+        let total = pets.reduce((soma, pet) => {
+            return soma + parseInt(pet.idade)
+        }, 0)
+        console.log(total);
+
+
+        
+
+        console.log('4');
+        let nome = pets.map(pet => pet.nome);
+        console.log(nome);
+
+        
+    
+        console.log(' 5');
+        let idade= pets.map(pet => {
+            return parseInt(pet.idade) * 7
+        });
+        console.log(idade);
+
+
+
+        console.log(' 6');
+        let TCachorros = pets.filter(pet => {
+            return pet.tipoPet === 'cachorro'
+        }).length;
+        console.log(TCachorros);
+
+
+       
+       
+        console.log('Resolução ex 6');
+        let nomeT = pets.map(pet => {
+            return {
+                nome : pet.nome,
+                tipoPet: pet.tipoPet
+            }
+        });
+        console.log(nomeT);
+
+       
+       
+</script>
+</html>
