@@ -1,4 +1,4 @@
-import React from 'react';
+import React from '../../pages/cadastrar/node_modules/react';
 
 const Rodape = () => {
     return(

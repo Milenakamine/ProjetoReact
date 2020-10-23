@@ -1,5 +1,5 @@
-import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
+import React from '../../pages/cadastrar/node_modules/react';
+import {Navbar, Nav} from '../../pages/cadastrar/node_modules/react-bootstrap';
 
 const Menu = () =>{
 
